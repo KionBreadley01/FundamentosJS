@@ -29,7 +29,7 @@ const limpiar = () => {
    result.value= 0;
 
 }
-const random = () =>{
+const ramdom = () =>{
    num1.value = Math.round(Math.random() * 100000)
    num2.value = Math.round(Math.random() * 100000)
 }
