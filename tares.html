@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas con javascript</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: blueviolet;
+        }
+        .container{
+            width: 840px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+        .container h1{
+            text-align: center;
+            width: 100%;
+
+        }
+        .container button{
+            width:  160px;
+            height: 50px;
+            margin: 3px;
+            background-color: orange;
+            border-radius:  5px;
+            font-weight: bold;
+        }
+
+        .container textarea{
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de tareas con javascript</h1>
+        <div class="formulario">
+            <h2>Ingresar Tereas</h2>
+            <textarea name="" id="inputTarea" cols="50" rows="6"></textarea>
+            <h2>Hora</h2>
+            <input type="time" name="" id="tiempo">
+            <button onclick="addTarea()"> Agregar tareas</button>
+        </div>
+        <div id="tareas">
+            <h2>tareas</h2>
+            <ul></ul>
+        </div>
+    </div>
+    <script  src="./tareas.js"></script>
+</body>
+</html>
