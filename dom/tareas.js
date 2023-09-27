@@ -9,17 +9,18 @@ function createAlert(message) {
      A simple primary alert—check it out!
      </div>
      */
-    const alerta = document.createElement('div');
-    alerta.classList.add('alert');
-    alerta.classList.add('alert-primary');
-    alerta.setAttribute('role', 'alert');
-    let buttons = '<div>';
-    buttons += `<button class="btn">Red</button>`;
-    buttons += `<button class="btn">Yellow</button>`;
-    buttons += `<button class="btn">Green</button>`;
-    buttons += `<button class="btn"><i class="fa fa-trash"></i></button></div>`;
-    alerta.innerHTML = `<p>${message}</p>${buttons}`;
-    return alerta;
+     const alerta = document.createElement('div');
+     alerta.classList.add('alert');
+     alerta.classList.add('alert-primary');
+     alerta.setAttribute('role', 'alert');
+     let buttons = '<div>';
+     buttons += `<button class="btn red">Red</button>`;
+     buttons += `<button class="btn yellow">Yellow</button>`;
+     buttons += `<button class="btn green">Green</button>`;
+     buttons += `<button class="btn x"><i class="fa fa-trash"></i></button></div>`;
+     alerta.innerHTML = `<p>${message}</p>${buttons}`;
+     return alerta;
+ 
 }
 
 function addTarea() {
